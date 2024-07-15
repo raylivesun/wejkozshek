@@ -1,0 +1,25 @@
+(provide 'get)
+(provide 'set)
+
+;; language is not supported
+(defun speak-velope-header (str &rest object)
+   "the header of the message that will be speak to the server"
+   (let ((header (make-instance 'spak-envelope-header)))
+    (setf (spak-envelope-header-object header) object)
+    (setf (spak-envelope-header-str header) str)
+    header))
+
+;; line 1 of popup 
+(#<io synonym-stream *terminal-io*>)
+(#<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM>
+         #<IO TERMINAL-STREAM>>)
+         (provide 'get)
+         (provide 'set)
+;; procudural-stream : proc u plural-stream
+;; line 2 of popup
+(defun fill-columns (line &rest popup)
+   "fills up columns in the popup"
+   ;;...
+   (fill-columns line popup 0))
+;; Lisp stack overflow. RESET
+
